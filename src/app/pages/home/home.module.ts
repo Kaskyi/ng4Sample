@@ -1,6 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { HomeComponent } from 'app/pages/home/home.component';
 import { HomeManagerComponent } from 'app/pages/home/home-manager/home-manager.component';
@@ -22,13 +23,14 @@ import { AuthService } from 'app/services/auth.service';
     ],
     imports: [
         FormsModule,
-        HomeRoutingModule
+        HomeRoutingModule,
+        TranslateModule
     ],
     providers: [
         GuestGuard,
         UserGuard,
         ManagerGuard,
-        AuthService
+        AuthService,
     ],
     bootstrap: []
 })

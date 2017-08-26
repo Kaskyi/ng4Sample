@@ -1,0 +1,7 @@
+{
+    "HOME": {
+      "TITLE": "Привет Angular 2 with ngx-translate!",
+      "SELECT": "Сменить язык"
+    },
+    "LAZY": "Я ленивый загрузчик!"
+  }
