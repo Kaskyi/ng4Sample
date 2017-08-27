@@ -12,11 +12,19 @@ import { AppComponent } from './app.component';
 import { HomeModule } from 'app/pages/home/home.module';
 import { AppRoutingModule } from 'app/app.module.router';
 import { AppTranslationModule } from 'app/app.translator';
+import { MenuTopComponent } from './components/menu-top/menu-top.component';
+import { AsideLeftComponent } from './components/aside-left/aside-left.component';
+import { AsideRightComponent } from './components/aside-right/aside-right.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    MenuTopComponent,
+    AsideLeftComponent,
+    AsideRightComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
