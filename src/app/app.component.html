@@ -1,8 +1,21 @@
-<main>
-    <app-menu-top></app-menu-top>
-    <app-aside-left></app-aside-left>
-    <app-aside-right></app-aside-right>
-    <router-outlet></router-outlet>
+<main id="wrapper"  [ngClass]="{'toggled': toggled}">
+    <section id="sidebar-wrapper">
+        <app-aside-left></app-aside-left>
+    </section>
+    <section id="page-content-wrapper">
+        <app-menu-top></app-menu-top>
+        <app-aside-right></app-aside-right>
+        <router-outlet></router-outlet>
+        <div class="container-fluid bg-white p-4">
+            <h1>Simple Sidebar</h1>
+            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will
+                appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear.
+                On small screens, the page content will be pushed off canvas.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+            <button class="btn btn-secondary" (click)="toggleNav()"><i class="ion ion-ios-menu"  ></i></button>
+        </div>
+    </section>
+  
 </main>
 <footer>
     <app-footer></app-footer>

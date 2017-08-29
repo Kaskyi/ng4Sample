@@ -18,6 +18,12 @@ $warning: #e7ba08 !default;
 $menu-top-height: 66px;
 $menu-top-z-index: 1050;
 :host /deep/ {
+    .breadcrumb{
+        background: transparent;
+        background-color: transparent;
+        margin-bottom:0px; 
+    }
+    
     height: $menu-top-height;
     display: block;
     width: 100%;

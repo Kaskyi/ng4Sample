@@ -1,23 +1,8 @@
-<div class="page-top clearfix" baScrollPosition maxHeight="50"  [ngClass]="{scrolled: isScrolled}">
-  <a routerLink="/pages/dashboard" class="al-logo clearfix"><span>ng2-</span>admin</a>
-  <a href  class="collapse-menu-link ion-navicon"></a>
-
-  <div class="search">
-    <i class="ion-ios-search-strong" ng-click="startSearch()"></i>
-    <input id="searchInput" type="text" placeholder="Search for...">
-  </div>
-
-  <div class="user-profile clearfix">
-    <div class="dropdown al-user-profile">
-      <a class="profile-toggle-link dropdown-toggle" id="user-profile-dd" data-toggle="dropdown" aria-expanded="false">
-   <img src="{{ ( 'Nasta'  ) }}">
- </a>
-      <ul class="dropdown-menu top-dropdown-menu profile-dropdown" aria-labelledby="user-profile-dd">
-        <li class="dropdown-item"><a href routerLink="/home" routerLinkActive="active"><i class="fa fa-user"></i>Home</a></li>
-        <li class="dropdown-item"><a href><i class="fa fa-cog"></i>Settings</a></li>
-        <li class="dropdown-item"><a href class="signout"><i class="fa fa-power-off"></i>Sign out</a></li>
-      </ul>
-    </div>
-
-  </div>
+<div class="bg-white d-flex justify-content-end mb-3">
+  <ol class=" mr-auto  breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active">Data</li>
+  </ol>
+  <input type="text" class="btn " placeholder="Search ..." name="" value="">
 </div>

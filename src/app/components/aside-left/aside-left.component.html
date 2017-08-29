@@ -1,8 +1,94 @@
-<aside class="sidebar left">
-  <ul class="sidebar-nav">
-    <li class="sidebar-brand"> <a href="#">Brend</a> </li>
-    <li> <a href="#">Dashboard<span class="pull-right glyphicon glyphicon-menu-right" aria-hidden="true"></span></a> </li>
-    <li> <a href="#">Home<span class="pull-right glyphicon glyphicon-menu-right" aria-hidden="true"></span></a> </li>
-    <li> <a href="#">Bill<span class="pull-right glyphicon glyphicon-menu-right" aria-hidden="true"></span></a> </li>
-  </ul>
-</aside>
+<ul class="sidebar-nav">
+
+  <div class="avatar-container">
+
+    <div>
+      <img src="  https://www.splitshire.com/wp-content/uploads/2014/11/SplitShire-05072-1800x1200.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+
+    <div class="avatar-ng">
+
+    </div>
+
+    <div class="p-2 avatar-content-top">
+      <h4 class="mt-4 ml-2">User Name</h4>
+    </div>
+
+    <div class="avatar-content-img">
+      <div class="text-center">
+        <img class="rounded-circle img-avatar" alt="..." src="http://s3.amazonaws.com/totem_production/assets/other/1983/Little__Bird_Avatar.jpg?1349476142">
+      </div>
+      <div class="p-2 avatar-content-bottom">
+        <div class="text-right"><i class="ion icon-lg ion-ios-exit"></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-row align-items-stretch flex-nowrap">
+    <a href class="p-4 text-center"><i class="ion icon-lg icon-single ion-ios-call"></i> <br> Phone</a>
+    <a href class="p-4 text-center"><i class="ion icon-lg icon-single ion-ios-cog"></i> <br> Cog</a>
+    <a href class="p-4 text-center"><i class="ion icon-lg icon-single ion-ios-mail"></i> <br> Mail</a>
+    <a href class="p-4 text-center"><i class="ion icon-lg icon-single ion-ios-map"></i> <br> Map</a>
+  </div>
+  <hr>
+  <button (click)="showmenu=!showmenu">dsfsdfs</button>
+  <div class="fade1-container">
+    <ul class="fade1" [ngClass]="{'ng-enter ng-enter-active': showmenu,'ng-leave ng-leave-active': !showmenu}">
+      <li class="sidebar-brand">
+        <a href="#">
+        Start Bootstrap
+      </a>
+      </li>
+      <li >
+        <a href="#">Dashboard <i class="ion icon-sm right ion-ios-arrow-forward"></i></a>
+      </li>
+      <li>
+        <a href="#">Shortcuts <i class="ion icon-sm  right ion-ios-arrow-forward"></i></a>
+      </li>
+      <li>
+        <a href="#">Overview <i class="ion icon-sm right ion-ios-arrow-forward"></i></a>
+      </li>
+      <li>
+        <a href="#">Events</a>
+      </li>
+      <li class="text-center">
+        <a href="#"> <i class="ion icon-sm left ion-ios-arrow-back"></i> <span> About </span></a>
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="fade1" [ngClass]="{'ng-enter ng-enter-active': !showmenu,'ng-leave ng-leave-active': showmenu}">
+      <li class="sidebar-brand">
+        <a href="#">
+        Start Bootstrap 11111
+      </a>
+      </li>
+      <li>
+        <a href="#">D1ashboard</a>
+      </li>
+      <li>
+        <a href="#">Sho1rtcuts</a>
+      </li>
+      <li>
+        <a href="#">Ove1rview</a>
+      </li>
+      <li>
+        <a href="#">Eve1nts</a>
+      </li>
+      <li>
+        <a href="#">Abo1ut</a>
+      </li>
+      <li>
+        <a href="#">Se1rvices</a>
+      </li>
+      <li>
+        <a href="#">Con1tact</a>
+      </li>
+    </ul>
+  </div>
+
+</ul>
